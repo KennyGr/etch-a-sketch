@@ -1,0 +1,84 @@
+body {
+    background-color: red;
+}
+
+#grid {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width:500px;
+    margin: auto;
+    border: 9px rgb(232, 232, 232) solid;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 60px;
+    margin-top: 15px;
+}
+
+.headerText {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    color: gold;
+    font-family: "Dancing Script", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.resetButton {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    height: 40px;
+    border: 3px gold solid;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.resetButton:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.resetButton:active {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex: 1 1 0;
+}
+
+.innerSquare {
+    display: flex;
+    flex: 1 1 0;
+    background-color: white;
+    border: .5px solid;
+    min-height: 1px;
+    min-width: 1px;
+}
+
+.innerSquareHovered {
+    background-color: rgb(26, 26, 26);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 850px;
+    margin-top: -190px;
+}
+
+.knob {
+    width: 120px;
+    height: auto;
+}
