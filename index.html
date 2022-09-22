@@ -13,22 +13,46 @@
 </head>
 
 <body>
-    <div class="header">
-        <p class="headerText">Etch-A-Sketch</p>
+    <div class="etch-a-sketch">
+        <div class="toy-outline">
+            <div class="minus-buttons">
+                <div class="header">
+                    <p class="headerText">Etch-A-Sketch</p>
+                </div>
+
+                <div class="resetSlider resetButton">
+                    <input type="range" id="resetButton" name="resetButton" min="1" max="99" step="1" value="16">
+                    <label id ="resetLabel" for="resetButton">Resize: 16 x 24</label>
+                </div>
+
+                <div class="grid" id="grid">
+                </div>
+
+                <div class="reset">
+
+                    <button id ="clearButton" class="resetButton">Clear</button>
+
+                    <div class="colorSelectors">
+                        <ul>
+                            <li><input type="color" id ="colorSelector" class="colorSelector"></li>
+                            <li><label for="colorSelector">Select a Color</label></li>
+                        </ul>
+
+                        <button id ="randomColorButton" class="randomColorButton">Random Colors</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="knobs">
+                <div class="right">
+                    <img class="knob" src="img/knob.png">
+                </div>
+                <div class="left">
+                    <img class="knob" src="img/knob.png">
+                </div>
+            </div>
     </div>
 
-    <div class="reset">
-        <button id ="clearButton" class="resetButton">Clear</button>
-        <button id="resetButton" class="resetButton">Resize</button>
-    </div>
-
-    <div id="grid">
-    </div>
-
-    <div class="buttons">
-        <img class="knob" src="img/knob.png">
-        <img class="knob" src="img/knob.png">
-    </div>
 
 </body>
-</html>
